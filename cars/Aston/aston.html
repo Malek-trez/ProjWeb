@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <!-- http://getbootstrap.com/docs/5.1/ -->
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      rel="stylesheet"
+    />
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    ></script>
+    <!-- https://favicon.io/emoji-favicons/money-bag/ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car</title>
+    <link rel="stylesheet" href="..\..\bootstrap\css\all.min.css" />
+    <link rel="stylesheet" href="../car.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swal js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../../img/logo.png" alt="" height="90cm" width="200cm" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3 d-none d-lg-block">
+            <i class="fa-solid"></i>
+          </div>
+          <div>
+            <a class="btn rounded-pill main-btn" href="#">Login</a>
+            <a class="btn rounded-pill main-btn" href="#">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- header section ends -->
+    <!-- home section starts -->
+    <div class="container-fluid banner">
+      <div class="col-md-12">
+        <div style="width: 50%; margin: auto" class="navbar navbar-md">
+          <ul style="width: 50%; margin: auto" class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ford</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Audi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hyundai</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2 info">
+          <img src="logo.png" alt="" style="width: 700px" />
+          <p class="text-center">
+            While Aston Martin may have gained fame as being 007's ride of
+            choice, today it makes amazing sports cars that each have a license
+            to thrill. The seductively swooping DB11 is available as a coupe or
+            convertible (known as Volante in Aston Martin-speak) and with a
+            powerful V-12 engine. The V-8-only Vantage is Aston's entry-level
+            sports car, and the high-riding DBX is the company's first SUV.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- car packages starts -->
+    <section class="car-packages">
+      <h1 class="heading-title">Nos Voitures</h1>
+      <div class="box-container">
+        <!-- Start of loop -->
+        <!-- <?php for ($i = 1; $i <= 3; $i++): ?> -->
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-1" src="db11/1.jpg" alt="" />
+              <img id="slide-2" src="db11/2.jpg" alt="" />
+              <img id="slide-3" src="db11/3.jpg" alt="" />
+              <img id="slide-4" src="db11/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2023 Aston Martin DB11</h3>
+            <p>
+              The DB11 offers two engine choices: a twin-turbocharged 4.0-liter
+              V-8 or a twin-turbocharged 5.2-liter V-12. The former develops 528
+              horsepower and 513 pound-feet of torque while the latter makes 630
+              ponies and 516 pound-feet. Both pair with an eight-speed automatic
+              transmission that transmits all that torque to the rear wheels.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $220,000</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $2,000/h</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-11" src="dbs/1.jpg" alt="" />
+              <img id="slide-21" src="dbs/2.jpg" alt="" />
+              <img id="slide-31" src="dbs/3.jpg" alt="" />
+              <img id="slide-41" src="dbs/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-11"></a>
+              <a href="#slide-21"></a>
+              <a href="#slide-31"></a>
+              <a href="#slide-41"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2023 Aston Martin DBS</h3>
+            <p>
+              Capable of hitting 60 mph in a claimed 3.2 seconds for the coupe,
+              the DBS is a monstrously quick touring car that tops out at 211
+              mph, regardless of bodystyle. A twin-turbocharged 5.2-liter V-12
+              engine makes 715 horsepower in the regular DBs and 759 horsepower
+              in the 770 Ultimate models and drives the rear wheels through an
+              eight-speed automatic; mash the gas pedal and the DBS takes off
+              like a Saturn V rocket.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $333,686</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $2,300/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-12" src="one711/1.jpg" alt="" />
+              <img id="slide-22" src="one711/2.jpg" alt="" />
+              <img id="slide-32" src="one711/3.jpg" alt="" />
+              <img id="slide-42" src="one711/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-12"></a>
+              <a href="#slide-22"></a>
+              <a href="#slide-32"></a>
+              <a href="#slide-42"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2011 Aston Martin One-77</h3>
+            <p>
+              Limited to 77 units worldwide and sporting a carbon monocoque
+              chassis, a 7.3-liter V-12 with at least 700 horsepower, and a
+              hand-formed aluminum body, the near-two-million-dollar One-77 is
+              what happens when an automaker builds a car without ever saying
+              “no” to its engineers. Despite its stylish, show-car body and
+              exquisite detailing, the One-77 is a cutting-edge, racing-inspired
+              sports car underneath. It is super high-tech, beautifully finished
+              everywhere, and boasts impressive performance figures.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn"
+              >Buy for: $1,850,000</a
+            >
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $4,000/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-13" src="valkyrie/1.jpg" alt="" />
+              <img id="slide-23" src="valkyrie/2.jpg" alt="" />
+              <img id="slide-33" src="valkyrie/3.jpg" alt="" />
+              <img id="slide-43" src="valkyrie/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-13"></a>
+              <a href="#slide-23"></a>
+              <a href="#slide-33"></a>
+              <a href="#slide-43"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2022 Aston Martin Valkyrie</h3>
+            <p>
+              The Valkyrie's hybrid powertrain consists of a naturally aspirated
+              6.5-liter V-12 and an electric motor. A seven-speed automatic
+              transmission directs power to the rear wheels. Alone, the V-12
+              delivers 1001 horsepower, while the battery-electric
+              system—designed by Rimac and Integral Powertrain—contributes an
+              additional 141 horsepower, although the combined horsepower rating
+              is set at 1139 hp. Acceleration is breathtaking, and we estimate
+              that the Valkyrie can hit 60 mph in as little as 2.3 seconds.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn"
+              >Buy for: $3,500,000</a
+            >
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $8,000/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-14" src="valhalla/1.png" alt="" />
+              <img id="slide-24" src="valhalla/2.jpg" alt="" />
+              <img id="slide-34" src="valhalla/3.jpg" alt="" />
+              <img id="slide-44" src="valhalla/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-14"></a>
+              <a href="#slide-24"></a>
+              <a href="#slide-34"></a>
+              <a href="#slide-44"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2024 Aston Martin Valhalla</h3>
+            <p>
+              The Valhalla will feature a powerful plug-in-hybrid powertrain. At
+              its core will be a twin-turbo 4.0-liter V-8 with an exotic
+              flat-plane-crank design that's sourced from Mercedes-AMG. It'll
+              feed the rear wheels through an eight-speed dual-clutch automatic
+              transmission. Additionally, an electric motor will power the front
+              wheels and another will be integrated into the transmission. The
+              Valhalla's combined output is said to be 937 horsepower. Its
+              electrically assisted gearbox will also have an electric reverse
+              as well as an electronically controlled limited-slip rear
+              differential.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $800,000</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $2,800/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-15" src="vanquish/1.jpg" alt="" />
+              <img id="slide-25" src="vanquish/2.jpg" alt="" />
+              <img id="slide-35" src="vanquish/3.jpg" alt="" />
+              <img id="slide-45" src="vanquish/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-15"></a>
+              <a href="#slide-25"></a>
+              <a href="#slide-35"></a>
+              <a href="#slide-45"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2025 Aston Martin Vanquish</h3>
+            <p>
+              Aston Martin will likely be bolting an AMG-sourced twin-turbo
+              4.0-liter V-8 into the Vanquish, and it'll pair with two electric
+              motors to form a plug-in-hybrid powertrain. That's a change from
+              the hybrid 3.0-liter V-6 that the company had originally planned
+              to be built in-house. While the Vanquish will have a version of
+              the same powertrain found on the Valhalla, we think it's unlikely
+              it'll make the same 937 horsepower.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $300,000</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $2,300/h</a>
+          </div>
+        </div>
+      </div>
+      <!-- <?php endfor; ?> -->
+      <!-- End of loop -->
+      <div class="load-more">
+        <a href="#" class="btn rounded-pill main-btn">load more</a>
+      </div>
+    </section>
+    <!-- home packages section ends -->
+    <!-- footer section starts -->
+    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="info mb-5">
+              <img src="img\logo.png" alt="" class="mb-4" />
+              <p class="mb-5">
+                EASYDRIVE est une agence de vente et location de voiture en
+                Tunisie, disposant d’une large gamme de véhicules, avec boîte
+                manuelle ou automatique à des prix convenables.
+              </p>
+              <div class="copyright">
+                <i class="fa-solid fa-location-dot"></i> centre urbain nord
+                <div>&copy; 2021 - <span>EASYDRIVE</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Accueil</li>
+                <li>Services</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">About Us</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>log in</li>
+                <li>Register</li>
+                <li>About us</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="contact">
+              <h5 class="text-light">Contact Us</h5>
+              <p>Par Email :</p>
+              <a class="btn rounded-pill main-btn w-100" href="#"
+                >EASYDRIVE@gmail.com</a
+              >
+              <p class="lh-lg mt-3 mb-5">
+                OU Contactez-nous par téléphone. Nous attendons votre appel ou
+                votre message
+              </p>
+              <p>Tel/Fax : 40 00 00 00</p>
+              <p>GSM : 20 000 000</p>
+              <ul class="d-flex mt-5 list-unstyled gap-3">
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section ends -->
+    <!-- swiper js -->
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="../car.js"></script>
+  </body>
+</html>

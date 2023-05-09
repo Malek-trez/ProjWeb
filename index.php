@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -86,20 +88,26 @@
         <div class="col-md-12">
           <div style="width: 50%; margin: auto;" class="navbar navbar-md">
 
-            <ul style="width: 50%; margin: auto;" class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Kia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Ford</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Audi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Hyundai</a>
-              </li>
-            </ul>
+              <ul style="width: 50%; margin: auto;" class="nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="cars\Aston\aston.html">Aston</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="cars\bugatti\bugatti.html">Bugatti</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="cars\koenigsegg\koenigsegg.html">Koenigsegg</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="cars\lamborghinni\lamborghinni.html">Lamborghinni</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="cars\Porche\porche.html">Porche</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="cars\rollsroyce\rollsroyce.html">Rollsroyce</a>
+                  </li>
+              </ul>
           </div>
         </div>
         <div class="col-md-8 offset-md-2 info">

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <!-- http://getbootstrap.com/docs/5.1/ -->
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      rel="stylesheet"
+    />
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    ></script>
+    <!-- https://favicon.io/emoji-favicons/money-bag/ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car</title>
+    <link rel="stylesheet" href="..\..\bootstrap\css\all.min.css" />
+    <link rel="stylesheet" href="../car.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swal js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../../img/logo.png" alt="" height="90cm" width="200cm" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3 d-none d-lg-block">
+            <i class="fa-solid"></i>
+          </div>
+          <div>
+            <a class="btn rounded-pill main-btn" href="#">Login</a>
+            <a class="btn rounded-pill main-btn" href="#">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- header section ends -->
+    <!-- home section starts -->
+    <div class="container-fluid banner">
+      <div class="col-md-12">
+        <div style="width: 50%; margin: auto" class="navbar navbar-md">
+          <ul style="width: 50%; margin: auto" class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ford</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Audi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hyundai</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2 info">
+          <!-- <p><br /></p> -->
+          <img
+            src="logo.png"
+            alt=""
+            style="width: 700px; margin-top: 3rem; margin-bottom: 1rem"
+          />
+          <p class="text-center">
+            <br />The growl of the engine. The adrenaline in your veins. The
+            lurch forward, swooping around corners and storming down the track
+            at electrifying speeds. Driving a Bugatti is an unparalleled
+            experience. <br />Fast and formidable, these record-breaking
+            hypercars seem to defy traditional engineering limits and won’t slow
+            down for anything as uncool as the laws of physics. They’re the
+            playthings of the super-rich, complete with million-dollar price
+            tags, handcrafted bodies, and a sleekness that’s in a class of its
+            own.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- car packages starts -->
+    <section class="car-packages">
+      <h1 class="heading-title">Nos Voitures</h1>
+      <div class="box-container">
+        <!-- Start of loop -->
+        <!-- <?php for ($i = 1; $i <= 3; $i++): ?> -->
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-1" src="veyron/1.webp" alt="" />
+              <img id="slide-2" src="veyron/2.webp" alt="" />
+              <img id="slide-3" src="veyron/3.webp" alt="" />
+              <img id="slide-4" src="veyron/4.webp" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2006 Bugatti Veyron</h3>
+            <p>
+              The Veyron has a 258 mph (415 km/h) top speed and a 1,001
+              horsepower engine, initially making it the world’s fastest
+              production car before its successors were released. It’s a truly
+              exotic car, meticulously crafted with a full range of impressive
+              technology. It combines a harmonious balance between lift and
+              downforce to accelerate from 0-100 km/h in a breathtaking 2.6
+              seconds.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $1.9M</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $6,000/h</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-11" src="chiron/2.png" alt="" />
+              <img id="slide-21" src="chiron/1.jpg" alt="" />
+              <img id="slide-31" src="chiron/3.jpg" alt="" />
+              <img id="slide-41" src="chiron/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-11"></a>
+              <a href="#slide-21"></a>
+              <a href="#slide-31"></a>
+              <a href="#slide-41"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2016 Bugatti Chiron</h3>
+            <p>
+              It’s a beast of a supercar that doesn’t hold back on the roads:
+              this car will accelerate from 0-200 km/h in less than 2.5 seconds
+              and 186 mph (0-300 km/h) in under 13.6. Its top speed is limited
+              to 261 mph (420 km/h), but its specially created wider Michelin
+              tires mean the Chiron could likely exceed 270 mph (435 km/h).<br />
+              It’s a car that shows off in the most casual way possible, with 16
+              cylinders in its eight-liter engine and a seamless body that
+              carries it all together.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $2.9M</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $7,500/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-12" src="noire/1.webp" alt="" />
+              <img id="slide-22" src="noire/2.webp" alt="" />
+              <img id="slide-32" src="noire/3.webp" alt="" />
+              <img id="slide-42" src="noire/4.webp" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-12"></a>
+              <a href="#slide-22"></a>
+              <a href="#slide-32"></a>
+              <a href="#slide-42"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Bugatti La Voiture Noire</h3>
+            <p>
+              La Voiture Noire pays homage to the art deco design of the Type
+              57SC Atlantic, one of the most coveted classic cars in the world
+              while using the Chiron as its basis and turbocharging every
+              component of both. It’s an extraordinary-looking machine that
+              packs 1,500 horsepower and acts as a manifesto of the Bugatti
+              aesthetic. Its sculptural qualities are complemented by a
+              quad-turbo W-16 engine with a top speed of 261 mph (420 km/h) and
+              the ability to race from 0-100 km/h in 2.5 seconds. It’s fair to
+              say that La Voiture Noire is more a piece of artwork than a
+              traditional car.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $12M</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $4,000/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-13" src="divo/1.jpg" alt="" />
+              <img id="slide-23" src="divo/2.jpg" alt="" />
+              <img id="slide-33" src="divo/3.jpg" alt="" />
+              <img id="slide-43" src="divo/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-13"></a>
+              <a href="#slide-23"></a>
+              <a href="#slide-33"></a>
+              <a href="#slide-43"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Bugatti Divo</h3>
+            <p>
+              If time is money, then the Bugatti Divo more than justifies its
+              price tag. Based on the Chiron but promising to hit even faster
+              speeds, it’s a piece of artwork on the roads with its astounding
+              1,500 horsepower and speeds that promise to make you rethink the
+              laws of physics.<br />
+              The Divo offers significantly higher performance than previous
+              Bugatti models, with more progressive design language leading to a
+              blazing fast acceleration. This supercar has an electronically
+              limited top speed of 236 mph (380 km/h) and can hit 100 km/h in a
+              blink-and-you’ll-miss-it 2.4 seconds.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $5.4M</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $9,500/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-14" src="centodieci/1.jpg" alt="" />
+              <img id="slide-24" src="centodieci/2.jpg" alt="" />
+              <img id="slide-34" src="centodieci/3.jpg" alt="" />
+              <img id="slide-44" src="centodieci/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-14"></a>
+              <a href="#slide-24"></a>
+              <a href="#slide-34"></a>
+              <a href="#slide-44"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Bugatti Centodieci</h3>
+            <p>
+              “Centodieci” translates to 110 in Italian but even rating this car
+              a 110/100 is doing it a disservice. The Bugatti Centodieci fuses
+              exceptional design and flawless technology to create a
+              limited-edition hypercar of dreams. This beast of a vehicle is a
+              stand-out drive for multiple reasons. It can accelerate from 0-60
+              mph (0-100 km/h) in 2.4 seconds with a top speed of 236 mph (380
+              km/h). For higher speeds, it’ll take 6.1 seconds to reach speeds
+              of 124 mph (200km/h), and 13.1 seconds to hit 186 mph (300km/h).
+              This final figure is a 0.5-second improvement over the Chiron.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $8.6M</a>
+            <a href="#" class="btn rounded-pill main-btn"
+              >Rent for: $10,000/h</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-15" src="mistral/1.jpg" alt="" />
+              <img id="slide-25" src="mistral/2.jpg" alt="" />
+              <img id="slide-35" src="mistral/3.jpg" alt="" />
+              <img id="slide-45" src="mistral/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-15"></a>
+              <a href="#slide-25"></a>
+              <a href="#slide-35"></a>
+              <a href="#slide-45"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Bugatti Mistral Roadster</h3>
+            <p>
+              The Bugatti Mistral Roadster is the last Bugatti featuring the
+              brand’s famous quad-turbo, 8.0-liter W16 engine. The Mistral
+              Roadster is based on the Chiron’s platform but takes its design
+              queues from the Bugatti Type 57 Roadster Grand Raid first released
+              in 1934. Bugatti will produce only 99 Mistral Roadsters, and they
+              have all been purchased before entering the production line.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $5M</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $9,000/h</a>
+          </div>
+        </div>
+      </div>
+      <!-- <?php endfor; ?> -->
+      <!-- End of loop -->
+      <div class="load-more">
+        <a href="#" class="btn rounded-pill main-btn">load more</a>
+      </div>
+    </section>
+    <!-- home packages section ends -->
+    <!-- footer section starts -->
+    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="info mb-5">
+              <img src="img\logo.png" alt="" class="mb-4" />
+              <p class="mb-5">
+                EASYDRIVE est une agence de vente et location de voiture en
+                Tunisie, disposant d’une large gamme de véhicules, avec boîte
+                manuelle ou automatique à des prix convenables.
+              </p>
+              <div class="copyright">
+                <i class="fa-solid fa-location-dot"></i> centre urbain nord
+                <div>&copy; 2021 - <span>EASYDRIVE</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Accueil</li>
+                <li>Services</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">About Us</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>log in</li>
+                <li>Register</li>
+                <li>About us</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="contact">
+              <h5 class="text-light">Contact Us</h5>
+              <p>Par Email :</p>
+              <a class="btn rounded-pill main-btn w-100" href="#"
+                >EASYDRIVE@gmail.com</a
+              >
+              <p class="lh-lg mt-3 mb-5">
+                OU Contactez-nous par téléphone. Nous attendons votre appel ou
+                votre message
+              </p>
+              <p>Tel/Fax : 40 00 00 00</p>
+              <p>GSM : 20 000 000</p>
+              <ul class="d-flex mt-5 list-unstyled gap-3">
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section ends -->
+    <!-- swiper js -->
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="../car.js"></script>
+  </body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <!-- http://getbootstrap.com/docs/5.1/ -->
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      rel="stylesheet"
+    />
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    ></script>
+    <!-- https://favicon.io/emoji-favicons/money-bag/ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car</title>
+    <link rel="stylesheet" href="..\..\bootstrap\css\all.min.css" />
+    <link rel="stylesheet" href="../car.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swal js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../../img/logo.png" alt="" height="90cm" width="200cm" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3 d-none d-lg-block">
+            <i class="fa-solid"></i>
+          </div>
+          <div>
+            <a class="btn rounded-pill main-btn" href="#">Login</a>
+            <a class="btn rounded-pill main-btn" href="#">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- header section ends -->
+    <!-- home section starts -->
+    <div class="container-fluid banner">
+      <div class="col-md-12">
+        <div style="width: 50%; margin: auto" class="navbar navbar-md">
+          <ul style="width: 50%; margin: auto" class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ford</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Audi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hyundai</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2 info">
+          <img
+            src="logo.jpg"
+            alt=""
+            style="width: 600px; margin-top: 2.5rem; margin-bottom: 2rem"
+          />
+          <p class="text-center">
+            Many 22-year-olds dream of supercars. But Christian von Koenigsegg
+            took matters into his own hands by founding a company to build one.
+            Before his 30th birthday, Koenigsegg cars unleashed one of the
+            world’s fastest and most astonishing models.
+            <br />
+            By infusing patented technology and refusing to accept anything but
+            perfection, Koenigsegg cars quickly proved their ferocity and
+            superiority. They demolished top speed records, grabbed global
+            headlines, and continue to push the envelope of automotive design.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- car packages starts -->
+    <section class="car-packages">
+      <h1 class="heading-title">Nos Voitures</h1>
+      <div class="box-container">
+        <!-- Start of loop -->
+        <!-- <?php for ($i = 1; $i <= 3; $i++): ?> -->
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-1" src="cc850/1.jpg" alt="" />
+              <img id="slide-2" src="cc850/2.jpg" alt="" />
+              <img id="slide-3" src="cc850/3.jpg" alt="" />
+              <img id="slide-4" src="cc850/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2024 Koenigsegg CC850</h3>
+            <p>
+              The CC850 sits at 1hp:1kg by pumping out a stomach-churning 1,385
+              horsepower on its featherlight curb weight of 1,385 kg (3,053
+              lbs.). It also throws in 1,385 Nm (1,021 lb-ft) of torque for good
+              measure
+              <br />Engine: 5.0L twin-turbo V-8
+              <br />
+              0-60 mph: 3 sec (est.)
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $3.65M</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $8,000/h</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-11" src="gemera/1.jpg" alt="" />
+              <img id="slide-21" src="gemera/2.jpg" alt="" />
+              <img id="slide-31" src="gemera/3.jpg" alt="" />
+              <img id="slide-41" src="gemera/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-11"></a>
+              <a href="#slide-21"></a>
+              <a href="#slide-31"></a>
+              <a href="#slide-41"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2024 Koenigsegg Gemera</h3>
+            <p>
+              Koenigsegg Gemera shifts the paradigm. Despite cranking out a
+              massive 1,700 horsepower, it still has room for you and three of
+              your closest friends. It removed the oversized combustion engine
+              and instead uses three electric motors combined with a compact
+              600-horsepower combustion Koenigsegg Gemera engine. The Koenigsegg
+              Gemera is a four-seater megacar ready to go for a double date like
+              no other. It also happens to have a 1,000-km (621-mile) combined
+              range. Koenigsegg plans to produce 300 units of the Gemera, the
+              most out of the Koenigsegg factory for a single model.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $1.7M</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $4,000/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-12" src="jesko/1.jpg" alt="" />
+              <img id="slide-22" src="jesko/2.jpg" alt="" />
+              <img id="slide-32" src="jesko/3.jpg" alt="" />
+              <img id="slide-42" src="jesko/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-12"></a>
+              <a href="#slide-22"></a>
+              <a href="#slide-32"></a>
+              <a href="#slide-42"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2021 Koenigsegg Jesko</h3>
+            <p>
+              The Koenigsegg Jesko Absolut, a low-drag variant of the Jesko,
+              held the title of the fastest car in the world, reaching speeds up
+              to 330 mph (531 km/h). And it does so on a platform that isn’t
+              just great to look at but is also full of interior creature
+              comforts like climate control, high-quality stereo with AirPlay,
+              and more legroom than most other supercars. The Koenigsegg Jesko
+              feeds 20 bar (290 psi) pressurized air into the turbos to reduce
+              lag, features an all-new Light Speed Transmission, and uses three
+              fuel injectors per cylinder to maximize performance. It’s no
+              wonder it received Top Gear’s 2022 Hypercar of the Year award.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $3M</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $7,500/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-13" src="regera/1.webp" alt="" />
+              <img id="slide-23" src="regera/2.webp" alt="" />
+              <img id="slide-33" src="regera/3.webp" alt="" />
+              <img id="slide-43" src="regera/4.webp" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-13"></a>
+              <a href="#slide-23"></a>
+              <a href="#slide-33"></a>
+              <a href="#slide-43"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2016</h3>
+            <p>
+              Koenigsegg founder Christian von Koenigsegg drove the Tesla Model
+              S, he was so impressed by the instant electric torque, it led to
+              the first partially-electric Koenigsegg car. <br />The Koenigsegg
+              Regera, which means to reign, features three electric motors
+              paired with a 5.0L V-8, creating a combined 1,500 horsepower. This
+              stunning model takes its name literally, ruling over the record
+              for 0–249–0 mph (0–400–0 km/h) at just 31.49 seconds.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $1.5M</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $4,000/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-14" src="agera/1.webp" alt="" />
+              <img id="slide-24" src="agera/2.webp" alt="" />
+              <img id="slide-34" src="agera/3.webp" alt="" />
+              <img id="slide-44" src="agera/4.webp" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-14"></a>
+              <a href="#slide-24"></a>
+              <a href="#slide-34"></a>
+              <a href="#slide-44"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2010 Koenigsegg Agera</h3>
+            <p>
+              Although newer models have surpassed the achievements, the
+              Koenigsegg Agera car firmly secured its place in the history
+              books. It was Top Gear’s 2010 Hypercar of the Year and continued
+              to achieve greatness for many years after.<br />
+              The Koenigsegg Agera R broke six world records in one incredible
+              session in 2011, including 0–186–0 mph (0–300–0 km/h) in only
+              21.19 seconds. The 2015 improvements were released as the Agera
+              RS, which holds a record-setting top speed of 277.87 mph (447.19
+              km/h).
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $1.5M</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $3,500/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-15" src="ccx/1.webp" alt="" />
+              <img id="slide-25" src="ccx/2.webp" alt="" />
+              <img id="slide-35" src="ccx/3.webp" alt="" />
+              <img id="slide-45" src="ccx/4.webp" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-15"></a>
+              <a href="#slide-25"></a>
+              <a href="#slide-35"></a>
+              <a href="#slide-45"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2006 Koenigsegg CCX</h3>
+            <p>
+              As a rear-wheel drive model with a 6-speed manual gearbox and dual
+              superchargers, the Koenigsegg CCX is undeniably from a bygone era.
+              Yet it remains a stunning example of hypercar performance and
+              style. Koenigsegg produced 29 units of the original CCX, then
+              continued forward with no less than six variants. The Koenigsegg
+              CCXR incorporated more eco-friendly technology to use ethanol
+              fuel, while the CCX Edition reduced weight for ultimate track
+              performance.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $700,000</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $2,500/h</a>
+          </div>
+        </div>
+      </div>
+      <!-- <?php endfor; ?> -->
+      <!-- End of loop -->
+      <div class="load-more">
+        <a href="#" class="btn rounded-pill main-btn">load more</a>
+      </div>
+    </section>
+    <!-- home packages section ends -->
+    <!-- footer section starts -->
+    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="info mb-5">
+              <img src="img\logo.png" alt="" class="mb-4" />
+              <p class="mb-5">
+                EASYDRIVE est une agence de vente et location de voiture en
+                Tunisie, disposant d’une large gamme de véhicules, avec boîte
+                manuelle ou automatique à des prix convenables.
+              </p>
+              <div class="copyright">
+                <i class="fa-solid fa-location-dot"></i> centre urbain nord
+                <div>&copy; 2021 - <span>EASYDRIVE</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Accueil</li>
+                <li>Services</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">About Us</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>log in</li>
+                <li>Register</li>
+                <li>About us</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="contact">
+              <h5 class="text-light">Contact Us</h5>
+              <p>Par Email :</p>
+              <a class="btn rounded-pill main-btn w-100" href="#"
+                >EASYDRIVE@gmail.com</a
+              >
+              <p class="lh-lg mt-3 mb-5">
+                OU Contactez-nous par téléphone. Nous attendons votre appel ou
+                votre message
+              </p>
+              <p>Tel/Fax : 40 00 00 00</p>
+              <p>GSM : 20 000 000</p>
+              <ul class="d-flex mt-5 list-unstyled gap-3">
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section ends -->
+    <!-- swiper js -->
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="../car.js"></script>
+  </body>
+</html>

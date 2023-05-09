@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <!-- http://getbootstrap.com/docs/5.1/ -->
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      rel="stylesheet"
+    />
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    ></script>
+    <!-- https://favicon.io/emoji-favicons/money-bag/ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car</title>
+    <link rel="stylesheet" href="..\..\bootstrap\css\all.min.css" />
+    <link rel="stylesheet" href="../car.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swal js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../../img/logo.png" alt="" height="90cm" width="200cm" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3 d-none d-lg-block">
+            <i class="fa-solid"></i>
+          </div>
+          <div>
+            <a class="btn rounded-pill main-btn" href="#">Login</a>
+            <a class="btn rounded-pill main-btn" href="#">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- header section ends -->
+    <!-- home section starts -->
+    <div class="container-fluid banner">
+      <div class="col-md-12">
+        <div style="width: 50%; margin: auto" class="navbar navbar-md">
+          <ul style="width: 50%; margin: auto" class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ford</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Audi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hyundai</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2 info">
+          <img
+            src="logo.png"
+            alt=""
+            style="width: 700px; margin-top: 2rem; margin-bottom: 1rem"
+          />
+          <p class="text-center">
+            Lamborghini has spent decades as the purveyor of drool-worthy
+            supercars that are more commonly seen on bedroom posters than actual
+            roads. The Italian automaker is currently a subsidiary of Audi,
+            which in turn is owned by the Volkswagen Group. While the list of
+            memorable and historical Lambos is highlighted by the theatrical
+            Countach and the streamlined Diablo, the current lineup boasts
+            equally distinct models. The V-10–powered Huracán represents the
+            entry-level Lambo while the flagship Aventador is the brawniest,
+            oldest, and priciest model.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- car packages starts -->
+    <section class="car-packages">
+      <h1 class="heading-title">Nos Voitures</h1>
+      <div class="box-container">
+        <!-- Start of loop -->
+        <!-- <?php for ($i = 1; $i <= 3; $i++): ?> -->
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-1" src="aventador/1.jpg" alt="" />
+              <img id="slide-2" src="aventador/2.jpg" alt="" />
+              <img id="slide-3" src="aventador/3.jpg" alt="" />
+              <img id="slide-4" src="aventador/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2022 Lamborghini Aventador</h3>
+            <p>
+              The Aventador powertrain features a mid-mounted naturally
+              aspirated 6.5-liter V-12 that develops 769 horsepower. The
+              engine's 531 pound-feet of torque makes its way to all four wheels
+              via a seven-speed automated-manual transmission. Although we
+              haven't driven the Ultimae version, we have driven the brutally
+              powerful, track-focused SVJ (which stands for Superveloce Jota)
+              and its roofless counterpart and experienced their tremendous
+              acceleration and kidney-crushing cornering forces. The hefty
+              machines heaved through the corners, but their incredible grip and
+              four-wheel-steering systems helped them change direction on a
+              dime.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $507,353</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $2,500/h</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-11" src="countach/1.jpg" alt="" />
+              <img id="slide-21" src="countach/2.jpg" alt="" />
+              <img id="slide-31" src="countach/3.jpg" alt="" />
+              <img id="slide-41" src="countach/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-11"></a>
+              <a href="#slide-21"></a>
+              <a href="#slide-31"></a>
+              <a href="#slide-41"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2022 Lamborghini Countach</h3>
+            <p>
+              Underneath the Countach's retro bodywork, which is made of
+              lightweight carbon fiber, is a modern powertrain. Mounted in the
+              middle of the car is an electrically assisted 6.5-liter V-12. A
+              small electric motor­ draws power from a supercapacitor and
+              combines with the big gas engine to produce 802 total horsepower.
+              This is sent to all four wheels through a seven-speed automated
+              manual transmission. Considering that the new Countach weighs just
+              3516 pounds dry, the company's claims that it'll go from zero to
+              62 mph in 2.8 seconds and reach 124 mph in 8.4 seconds don't seem
+              outlandish. Lamborghini also says it has a top speed of 221 mph.
+              Every Countach rides on 20-inch wheels in front and 21-inchers out
+              back.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $2.64M</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $7000/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-12" src="huracan/1.jpg" alt="" />
+              <img id="slide-22" src="huracan/2.jpg" alt="" />
+              <img id="slide-32" src="huracan/3.jpg" alt="" />
+              <img id="slide-42" src="huracan/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-12"></a>
+              <a href="#slide-22"></a>
+              <a href="#slide-32"></a>
+              <a href="#slide-42"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2023 Lamborghini Huracán</h3>
+            <p>
+              A dry-sumped 5.2-liter V-10 is nestled behind the Huracán's cabin,
+              and it exudes a devilish sound whenever it revs towards its
+              8500-rpm redline. The engine now develops 631 horsepower in all
+              but the rugged Sterrato model which features a 601-hp version of
+              the V-10. Every Huracán V-10 is paired with a seven-speed
+              dual-clutch automatic that snaps off shifts under its own volition
+              or at the driver’s command via a set of paddle shifters. The
+              all-wheel-drive Evo coupe we tested for the 2020 model year ripped
+              from zero to 60 mph in 2.5 seconds and cleared the quarter-mile in
+              10.4 seconds at 135 mph.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $248,295</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $7,000/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-13" src="revuelto/1.jpg" alt="" />
+              <img id="slide-23" src="revuelto/2.jpg" alt="" />
+              <img id="slide-33" src="revuelto/3.jpg" alt="" />
+              <img id="slide-43" src="revuelto/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-13"></a>
+              <a href="#slide-23"></a>
+              <a href="#slide-33"></a>
+              <a href="#slide-43"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2024 Lamborghini Revuelto</h3>
+            <p>
+              This bull is no ballerina when it comes to performance. The
+              mid-mounted 814-hp 6.5-liter V-12 is naturally aspirated and
+              screams up to a 9500-rpm redline. Of the three electric motors
+              integrated into the powertrain, two drive the front wheels, while
+              the third is integrated into the eight-speed dual-clutch automatic
+              transmission and assists the V-12 gas engine on the rear axle. The
+              total output of this powertrain is 1001 horsepower, the most of
+              any Lamborghini ever.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $890,000</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $3,500/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-14" src="sian/1.jpg" alt="" />
+              <img id="slide-24" src="sian/2.jpg" alt="" />
+              <img id="slide-34" src="sian/3.jpg" alt="" />
+              <img id="slide-44" src="sian/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-14"></a>
+              <a href="#slide-24"></a>
+              <a href="#slide-34"></a>
+              <a href="#slide-44"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2021 Lamborghini Sián</h3>
+            <p>
+              Powered by an electrically assisted 6.5-liter V-12 mounted in the
+              middle of the car, the all-wheel-drive 2021 Sián produces a
+              combined 808 horsepower. That makes it the most powerful
+              production Lamborghini ever. On its own, the naturally aspirated
+              V-12 supplies a hefty 774 horses. Supplementing the engine is a
+              48-volt electric motor that adds 34 horses and is integrated into
+              the car's seven-speed automated manual transmission. It's one of
+              the most sophisticated hybrids on the planet, utilizing a
+              supercapacitor stored in the bulkhead instead of a more
+              traditional battery pack. It'll blast to 60 mph in 2.5 seconds on
+              the way to its estimated top speed of 220 mph.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $3M</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $7,500/h</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-15" src="urus/1.jpg" alt="" />
+              <img id="slide-25" src="urus/2.jpg" alt="" />
+              <img id="slide-35" src="urus/3.jpg" alt="" />
+              <img id="slide-45" src="urus/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-15"></a>
+              <a href="#slide-25"></a>
+              <a href="#slide-35"></a>
+              <a href="#slide-45"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2024 Lamborghini Urus</h3>
+            <p>
+              The Urus is powered by a 657-hp twin-turbocharged 4.0-liter V-8.
+              The planned hybrid powertrain hasn't been revealed yet, but we'll
+              update this space when that information becomes available. The
+              Urus's engine burbles deeply when idling, and absolutely howls
+              under full throttle. Permanent all-wheel drive and an eight-speed
+              automatic transmission conspire with all that power to enable
+              fantastic acceleration. In our testing, the Urus went from
+              rocketed to 60 mph in 3.1 seconds and tore up the quarter-mile in
+              11.3 seconds at 121 mph.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn">Buy for: $235,000</a>
+            <a href="#" class="btn rounded-pill main-btn">Rent for: $700/h</a>
+          </div>
+        </div>
+      </div>
+      <!-- <?php endfor; ?> -->
+      <!-- End of loop -->
+      <div class="load-more">
+        <a href="#" class="btn rounded-pill main-btn">load more</a>
+      </div>
+    </section>
+    <!-- home packages section ends -->
+    <!-- footer section starts -->
+    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="info mb-5">
+              <img src="img\logo.png" alt="" class="mb-4" />
+              <p class="mb-5">
+                EASYDRIVE est une agence de vente et location de voiture en
+                Tunisie, disposant d’une large gamme de véhicules, avec boîte
+                manuelle ou automatique à des prix convenables.
+              </p>
+              <div class="copyright">
+                <i class="fa-solid fa-location-dot"></i> centre urbain nord
+                <div>&copy; 2021 - <span>EASYDRIVE</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Accueil</li>
+                <li>Services</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">About Us</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>log in</li>
+                <li>Register</li>
+                <li>About us</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="contact">
+              <h5 class="text-light">Contact Us</h5>
+              <p>Par Email :</p>
+              <a class="btn rounded-pill main-btn w-100" href="#"
+                >EASYDRIVE@gmail.com</a
+              >
+              <p class="lh-lg mt-3 mb-5">
+                OU Contactez-nous par téléphone. Nous attendons votre appel ou
+                votre message
+              </p>
+              <p>Tel/Fax : 40 00 00 00</p>
+              <p>GSM : 20 000 000</p>
+              <ul class="d-flex mt-5 list-unstyled gap-3">
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section ends -->
+    <!-- swiper js -->
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="../car.js"></script>
+  </body>
+</html>
