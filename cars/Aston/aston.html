@@ -142,8 +142,8 @@
               ponies and 516 pound-feet. Both pair with an eight-speed automatic
               transmission that transmits all that torque to the rear wheels.
             </p>
-            <a href="#" class="btn rounded-pill main-btn">Buy for: $220,000</a>
-            <a href="#" class="btn rounded-pill main-btn">Rent for: $2,000/h</a>
+            <a href="#" class="btn rounded-pill main-btn" id="buy-btn1">Buy for: $220,000</a>
+            <a href="#" class="btn rounded-pill main-btn" id="rent-btn1">Rent for: $2,000/h</a>
           </div>
         </div>
 
@@ -173,8 +173,8 @@
               eight-speed automatic; mash the gas pedal and the DBS takes off
               like a Saturn V rocket.
             </p>
-            <a href="#" class="btn rounded-pill main-btn">Buy for: $333,686</a>
-            <a href="#" class="btn rounded-pill main-btn">Rent for: $2,300/h</a>
+            <a href="#" class="btn rounded-pill main-btn" id="buy-btn2">Buy for: $333,686</a>
+            <a href="#" class="btn rounded-pill main-btn" id="rent-btn2">Rent for: $2,300/h</a>
           </div>
         </div>
         <div class="box">
@@ -204,10 +204,8 @@
               sports car underneath. It is super high-tech, beautifully finished
               everywhere, and boasts impressive performance figures.
             </p>
-            <a href="#" class="btn rounded-pill main-btn"
-              >Buy for: $1,850,000</a
-            >
-            <a href="#" class="btn rounded-pill main-btn">Rent for: $4,000/h</a>
+            <a href="#" class="btn rounded-pill main-btn" id="buy-btn3">Buy for: $1,850,000</a>
+            <a href="#" class="btn rounded-pill main-btn" id="rent-btn3">Rent for: $4,000/h</a>
           </div>
         </div>
         <div class="box">
@@ -237,10 +235,8 @@
               is set at 1139 hp. Acceleration is breathtaking, and we estimate
               that the Valkyrie can hit 60 mph in as little as 2.3 seconds.
             </p>
-            <a href="#" class="btn rounded-pill main-btn"
-              >Buy for: $3,500,000</a
-            >
-            <a href="#" class="btn rounded-pill main-btn">Rent for: $8,000/h</a>
+            <a href="#" class="btn rounded-pill main-btn" id="buy-btn4">Buy for: $3,500,000</a>
+            <a href="#" class="btn rounded-pill main-btn" id="rent-btn4">Rent for: $8,000/h</a>
           </div>
         </div>
         <div class="box">
@@ -272,8 +268,8 @@
               as well as an electronically controlled limited-slip rear
               differential.
             </p>
-            <a href="#" class="btn rounded-pill main-btn">Buy for: $800,000</a>
-            <a href="#" class="btn rounded-pill main-btn">Rent for: $2,800/h</a>
+            <a href="#" class="btn rounded-pill main-btn" id="buy-btn5">Buy for: $800,000</a>
+            <a href="#" class="btn rounded-pill main-btn" id="rent-btn5">Rent for: $2,800/h</a>
           </div>
         </div>
         <div class="box">
@@ -302,8 +298,8 @@
               the same powertrain found on the Valhalla, we think it's unlikely
               it'll make the same 937 horsepower.
             </p>
-            <a href="#" class="btn rounded-pill main-btn">Buy for: $300,000</a>
-            <a href="#" class="btn rounded-pill main-btn">Rent for: $2,300/h</a>
+            <a href="#" class="btn rounded-pill main-btn" id="buy-btn6">Buy for: $300,000</a>
+            <a href="#" class="btn rounded-pill main-btn" id="rent-btn6">Rent for: $2,300/h</a>
           </div>
         </div>
       </div>
@@ -399,5 +395,93 @@
     <script src=" https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- custom js file link -->
     <script src="../car.js"></script>
+
+    <script>
+      for (let i = 1; i < 7; i++) {
+        document
+                .getElementById("buy-btn" + i.toString())
+                .addEventListener("click", () => {
+                  Swal.fire({
+                    title: "Buy this car?",
+                    html: "Are you sure about buying this car?<br>",
+                    showCancelButton: true,
+                    confirmButtonText: "Yes, I'm sure!",
+                    cancelButtonText: "Cancel",
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                      var name = document.getElementById("name").value;
+                      var email = document.getElementById("email").value;
+                      console.log("Name:", name, "Email:", email);
+                    }
+                  });
+                });
+      }
+
+      for (let i = 1; i < 7; i++) {
+        document
+                .getElementById("rent-btn" + i.toString())
+                .addEventListener("click", () => {
+                  var date =
+                          '<form style="margin-bottom: 1rem;"> <label for "date">From: </label><input type="date" id="date" name="date" required> <label for "date">To: </label><input type="date" id="date" name="date" required><br></form>';
+                  Swal.fire({
+                    title: "Rent this car?",
+                    html: date + "Are you sure about renting this car?<br>",
+                    showCancelButton: true,
+                    confirmButtonText: "Yes, I'm sure!",
+                    cancelButtonText: "Cancel",
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                      var name = document.getElementById("name").value;
+                      var email = document.getElementById("email").value;
+                      console.log("Name:", name, "Email:", email);
+                    }
+                  });
+                });
+      }
+    </script>
+
+    <script>
+      for (let i = 1; i < 7; i++) {
+        document
+                .getElementById("buy-btn" + i.toString())
+                .addEventListener("click", () => {
+                  Swal.fire({
+                    title: "Buy this car?",
+                    html: "Are you sure about buying this car?<br>",
+                    showCancelButton: true,
+                    confirmButtonText: "Yes, I'm sure!",
+                    cancelButtonText: "Cancel",
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                      var name = document.getElementById("name").value;
+                      var email = document.getElementById("email").value;
+                      console.log("Name:", name, "Email:", email);
+                    }
+                  });
+                });
+      }
+
+      for (let i = 1; i < 7; i++) {
+        document
+                .getElementById("rent-btn" + i.toString())
+                .addEventListener("click", () => {
+                  var date =
+                          '<form style="margin-bottom: 1rem;"> <label for "date">From: </label><input type="date" id="date" name="date" required> <label for "date">To: </label><input type="date" id="date" name="date" required><br></form>';
+                  Swal.fire({
+                    title: "Rent this car?",
+                    html: date + "Are you sure about renting this car?<br>",
+                    showCancelButton: true,
+                    confirmButtonText: "Yes, I'm sure!",
+                    cancelButtonText: "Cancel",
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                      var name = document.getElementById("name").value;
+                      var email = document.getElementById("email").value;
+                      console.log("Name:", name, "Email:", email);
+                    }
+                  });
+                });
+      }
+    </script>
   </body>
 </html>
