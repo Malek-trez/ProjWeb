@@ -85,8 +85,8 @@
 
     <div class="container-fluid banner">
       <div class="row">
-        <div class="col-md-12">
-          <div style="width: 50%; margin: auto;" class="navbar navbar-md">
+        <div class="col-md-12 ">
+          <div style="width: 100%; margin: auto;" class="navbar navbar-md">
 
               <ul style="width: 50%; margin: auto;" class="nav">
                   <li class="nav-item">
@@ -119,8 +119,6 @@
         </div>
       </div>
     </div>
-
-
 
     <div class="features text-center pt-5 pb-5" id="Services">
       <div class="container">
@@ -174,40 +172,52 @@
       </div>
     </div>
 
-    <div class="our-work text-center pt-5 pb-5" >
-      <div class="container">
-        <div class="main-title mt-5 mb-5 position-relative">
-          <img class="mb-4" width="100cm" height="100cm" src="img\logo.png" alt="" />
-          <h2>Marques disponibles chez nous</h2>
-          <p class="text-black-50 text-uppercase">Choisissez votre marque de voiture et découvrez toutes les actualités </p>
+<div class="our-work text-center pt-5 pb-5">
+  <div class="container">
+    <div class="main-title mt-5 mb-5 position-relative">
+      <img class="mb-4" width="100cm" height="100cm" src="img\logo.png" alt="" />
+      <h2>Marques disponibles chez nous</h2>
+      <p class="text-black-50 text-uppercase">Choisissez votre marque de voiture et découvrez toutes les actualités</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="box mb-3 bg-white" data-work="aston">
+          <img class="img-fluid img-size" src="img\aston.jpg" alt="" />
         </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="box mb-3 bg-white" data-work="Kia">
-              <img class="img-fluid" src="img\kia.png" alt="" />
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="box mb-3 bg-white" data-work="Ford">
-              <img class="img-fluid" src="img\Ford.jpg" alt="" />
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="box mb-3 bg-white" data-work="Audi">
-              <img class="img-fluid"  src="img\audi.png" alt="" />
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="box mb-3 bg-white" data-work="Hyundai">
-              <img class="img-fluid" src="img\Hyundai.png" alt="" />
-            </div>
-          </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="box mb-3 bg-white" data-work="Bugatti">
+          <img class="img-fluid img-size" src="img\Bugatti.png" alt="" />
         </div>
-        <div class="d-flex justify-content-center mt-5">
-          <a class="btn rounded-pill main-btn text-uppercase" href="#">+ PLUS</a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="box mb-3 bg-white" data-work="koenigsegg">
+          <img class="img-fluid img-size" src="img\koenigsegg.png" alt="" />
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="box mb-3 bg-white" data-work="lamborghini">
+          <img class="img-fluid img-size" src="img\lamborghini.jpg" alt="" />
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="box mb-3 bg-white" data-work="Porsche">
+          <img class="img-fluid img-size" src="img\porsche.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="box mb-3 bg-white" data-work="Rolls-Royce">
+          <img class="img-fluid img-size" src="img\rolls.png" alt="" />
         </div>
       </div>
     </div>
+    <div class="d-flex justify-content-center mt-5">
+      <a class="btn rounded-pill main-btn text-uppercase" href="#">+ PLUS</a>
+    </div>
+  </div>
+</div>
+
+
 
     <div class="stuff pt-5" id="about">
       <div class="container">
@@ -292,30 +302,30 @@
       </div>
     </div>
 
-    <div class="techs pt-5 pb-5 text-center">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
-            <img class="img-fluid" src="img\buy.jpg" alt="" />
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
-            <img class="img-fluid" height="100cm" width="100cm" src="img\gif.jpg" alt="" />
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
-            <img class="img-fluid" src="img\rent.jpg" alt="" />
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
-            <img class="img-fluid" src="img\buy.jpg" alt="" />
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
-            <img class="img-fluid" height="100cm" width="100cm" src="img\gif.jpg" alt="" />
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
-            <img class="img-fluid" src="img\rent.jpg" alt="" />
-          </div>
-        </div>
+<div class="techs pt-5 pb-5 text-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+        <img class="img-fluid" src="img/buy.jpg" alt="" />
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+        <img class="img-fluid" height="100cm" width="100cm" src="img/gif.jpg" alt="" />
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+        <img class="img-fluid" src="img/rent.jpg" alt="" />
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+        <img class="img-fluid" src="img/buy.jpg" alt="" />
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+        <img class="img-fluid" height="100cm" width="100cm" src="img/gif.jpg" alt="" />
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+        <img class="img-fluid" src="img/rent.jpg" alt="" />
       </div>
     </div>
+  </div>
+</div>
 
 
 
@@ -340,19 +350,19 @@
             <div class="links">
               <h5 class="text-light">Links</h5>
               <ul class="list-unstyled lh-lg">
-                <li>Accueil</li>
-                <li>Services</li>
+               <a href="#" ><li class="text-secondary">Accueil</li></a> 
+               <a href="#Services" ><li class="text-secondary">Services</li></a>
               </ul>
             </div>
           </div>
           <div class="col-md-6 col-lg-2">
             <div class="links">
-              <h5 class="text-light">About Us</h5>
+              <h5  class="text-light">About Us</h5>
               <ul class="list-unstyled lh-lg">
-                <li>log in</li>
-                <li>Register</li>
-                <li>About us</li>
-                <li>Contact Us</li>
+                <a class="no-link-highlight" href="login.html"><li class="text-secondary">login</li></a>
+                <a href="register.html"><li class="text-secondary">Register</li></a>
+                <a href="#about"><li class="text-secondary">A propos</li></a>
+                <a  href="#Contact"><li class="text-secondary">Contacter nous</li></a>
               </ul>
             </div>
           </div>
@@ -360,7 +370,7 @@
             <div class="contact">
               <h5 class="text-light">Contact Us</h5>
               <p>Par Email :</p>
-              <a class="btn rounded-pill main-btn w-100" href="#">EASYDRIVE@gmail.com</a>
+              <a class="btn rounded-pill main-btn w-100" href="#" >EASYDRIVE@gmail.com</a>
               <p class="lh-lg mt-3 mb-5">OU Contactez-nous par téléphone. Nous attendons votre appel ou votre message</p>
               <p>Tel/Fax : 40 00 00 00</p>
               <p>
