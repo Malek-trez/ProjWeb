@@ -424,90 +424,101 @@
     <script src="../car.js"></script>
 
     <script>
+
       for (let i = 1; i < 7; i++) {
-        document
-                .getElementById("buy-btn" + i.toString())
-                .addEventListener("click", () => {
-                  Swal.fire({
-                    title: "Buy this car?",
-                    html: "Are you sure about buying this car?<br>",
-                    showCancelButton: true,
-                    confirmButtonText: "Yes, I'm sure!",
-                    cancelButtonText: "Cancel",
-                  }).then((result) => {
-                    if (result.isConfirmed) {
-                      var name = document.getElementById("name").value;
-                      var email = document.getElementById("email").value;
-                      console.log("Name:", name, "Email:", email);
-                    }
-                  });
-                });
+        let buyBtn = document.getElementById("buy-btn" + i.toString());
+        attachBuyEventListener(buyBtn);
+      }
+      function attachBuyEventListener(buyBtn) {
+        buyBtn.addEventListener("click", () => {
+          var car = buyBtn.getAttribute("name");
+          Swal.fire({
+            title: "Buy this car?",
+            html: "Are you sure about buying this car?<br>",
+            showCancelButton: true,
+            confirmButtonText: "Yes, I'm sure!",
+            cancelButtonText: "Cancel",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              console.log(car);
+              // Perform a server-side operation by making an AJAX request
+              var xhr = new XMLHttpRequest();
+              xhr.open("POST", "../../Buy.php", true);
+              xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+              xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                  console.log(xhr.responseText);
+                  var response = xhr.responseText;
+
+                  if (response === "success") {
+                    alert("Success");
+                  } else if (response === "Not_Logged") {
+                    window.location.href = "../../login.html";
+                    alert("You are not logged in");
+                  }else{
+                    alert(response);
+                  }
+                } else if (xhr.readyState === 4 && xhr.status !== 200)  {
+                  console.log(xhr.responseText);
+                  console.log("Error: " + xhr.status);
+                  alert("Operation failed, please try again!");
+                }
+              };
+              xhr.send("car=" + car);
+            }
+          });
+        });
       }
 
       for (let i = 1; i < 7; i++) {
-        document
-                .getElementById("rent-btn" + i.toString())
-                .addEventListener("click", () => {
-                  var date =
-                          '<form style="margin-bottom: 1rem;"> <label for "date">From: </label><input type="date" id="date" name="date" required> <label for "date">To: </label><input type="date" id="date" name="date" required><br></form>';
-                  Swal.fire({
-                    title: "Rent this car?",
-                    html: date + "Are you sure about renting this car?<br>",
-                    showCancelButton: true,
-                    confirmButtonText: "Yes, I'm sure!",
-                    cancelButtonText: "Cancel",
-                  }).then((result) => {
-                    if (result.isConfirmed) {
-                      var name = document.getElementById("name").value;
-                      var email = document.getElementById("email").value;
-                      console.log("Name:", name, "Email:", email);
-                    }
-                  });
-                });
-      }
-    </script>
-
-    <script>
-      for (let i = 1; i < 7; i++) {
-        document
-                .getElementById("buy-btn" + i.toString())
-                .addEventListener("click", () => {
-                  Swal.fire({
-                    title: "Buy this car?",
-                    html: "Are you sure about buying this car?<br>",
-                    showCancelButton: true,
-                    confirmButtonText: "Yes, I'm sure!",
-                    cancelButtonText: "Cancel",
-                  }).then((result) => {
-                    if (result.isConfirmed) {
-                      var name = document.getElementById("name").value;
-                      var email = document.getElementById("email").value;
-                      console.log("Name:", name, "Email:", email);
-                    }
-                  });
-                });
+        let rentBtn = document.getElementById("rent-btn" + i.toString());
+        attachRentEventListener(rentBtn);
       }
 
-      for (let i = 1; i < 7; i++) {
-        document
-                .getElementById("rent-btn" + i.toString())
-                .addEventListener("click", () => {
-                  var date =
-                          '<form style="margin-bottom: 1rem;"> <label for "date">From: </label><input type="date" id="date" name="date" required> <label for "date">To: </label><input type="date" id="date" name="date" required><br></form>';
-                  Swal.fire({
-                    title: "Rent this car?",
-                    html: date + "Are you sure about renting this car?<br>",
-                    showCancelButton: true,
-                    confirmButtonText: "Yes, I'm sure!",
-                    cancelButtonText: "Cancel",
-                  }).then((result) => {
-                    if (result.isConfirmed) {
-                      var name = document.getElementById("name").value;
-                      var email = document.getElementById("email").value;
-                      console.log("Name:", name, "Email:", email);
-                    }
-                  });
-                });
+      function attachRentEventListener(rentBtn) {
+        rentBtn.addEventListener("click", () => {
+          var date = '<form style="margin-bottom: 1rem;"> <label for="from-date">From: </label><input type="date" id="from-date" name="from-date" required> <label for="to-date">To: </label><input type="date" id="to-date" name="to-date" required><br></form>';
+          Swal.fire({
+            title: "Rent this car?",
+            html: date + "Are you sure about renting this car?<br>",
+            showCancelButton: true,
+            confirmButtonText: "Yes, I'm sure!",
+            cancelButtonText: "Cancel",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              var fromDate = document.getElementById("from-date").value;
+              var toDate = document.getElementById("to-date").value;
+              var car = rentBtn.getAttribute("name");
+              console.log("From Date:", fromDate, "To Date:", toDate, "Car:", car);
+
+              // Perform the AJAX request
+              var xhr = new XMLHttpRequest();
+              xhr.open("POST", "../../Rent.php", true);
+              xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+              xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                  console.log(xhr.responseText);
+                  var response = xhr.responseText;
+                  // Process the response and redirect accordingly
+                  if (response === "success") {
+                    alert("Success");
+                  } else if (response === "Not_Logged") {
+                    // Redirect to login.html
+                    window.location.href = "../../login.html";
+                    alert("You are not logged in");
+                  } else{
+                    alert(response);
+                  }
+
+                } else if (xhr.readyState === 4 && xhr.status !== 200)  {
+                  console.log("Error: " + xhr.status);
+                  alert("Operation failed, please try again!");
+                }
+              };
+              xhr.send("fromDate=" + fromDate + "&toDate=" + toDate + "&car=" + car);
+            }
+          });
+        });
       }
     </script>
   </body>
