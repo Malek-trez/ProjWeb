@@ -1,451 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="initial-scale=1, width=device-width" />
-  <!-- http://getbootstrap.com/docs/5.1/ -->
-  <link
-          crossorigin="anonymous"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-          rel="stylesheet"
-  />
-  <script
-          crossorigin="anonymous"
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-  ></script>
-  <!-- https://favicon.io/emoji-favicons/money-bag/ -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rolls-Royce</title>
-  <link rel="stylesheet" href="..\..\bootstrap\css\all.min.css" />
-  <link rel="stylesheet" href="../car.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
-          rel="stylesheet"
-  />
-  <!-- swal js -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
-  <link
-          href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"
-          rel="stylesheet"
-  />
-</head>
-<body>
-<nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="../../index.php">
-      <img src="../../img/logo.png" alt="" height="90cm" width="200cm" />
-    </a>
-    <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#main"
-            aria-controls="main"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-    >
-      <i class="fa-solid fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="main">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#"
-          >Accueil</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-2 p-lg-3" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-2 p-lg-3" href="#">A propos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
-        </li>
-      </ul>
-      <div class="search ps-3 pe-3 d-none d-lg-block">
-        <i class="fa-solid"></i>
-      </div>
-      <div>
-        <a class="btn rounded-pill main-btn" href="#">Login</a>
-        <a class="btn rounded-pill main-btn" href="#">Register</a>
-      </div>
-    </div>
-  </div>
-</nav>
-<!-- header section ends -->
-<!-- home section starts -->
-<div class="container-fluid banner">
-  <div class="col-md-12">
-    <div style="width: 50%; margin: auto" class="navbar navbar-md">
-      <ul style="width: 50%; margin: auto" class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Kia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ford</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Audi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Hyundai</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-8 offset-md-2 info">
-      <img
-              src="logo.png"
-              alt=""
-              style="width: 700px; margin-top: 1rem; margin-bottom: 2.5rem"
-      />
-      <p class="text-center">
-        The legendary maker of some of the best luxury cars you can buy has
-        had a reputation of exemplary engineering since its introduction in
-        1906. While the vehicles are still built in England, Rolls-Royce is
-        actually owned today by BMW. The most expensive Rolls-Royce is the
-        Phantom; Phantom pricing starts at more than $450,000. There's also
-        an SUV, the Cullinan. It's named after the largest diamond ever
-        found.
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- car packages starts -->
-<section class="car-packages">
-  <h1 class="heading-title">Nos Voitures</h1>
-  <div class="box-container">
-    <!-- Start of loop -->
-    <!-- <?php for ($i = 1; $i <= 3; $i++): ?> -->
-    <div class="box">
-      <div class="swiper-wrapper">
-        <div class="slider">
-          <img id="slide-1" src="ghost/1.jpg" alt="" />
-          <img id="slide-2" src="ghost/2.jpg" alt="" />
-          <img id="slide-3" src="ghost/3.jpg" alt="" />
-          <img id="slide-4" src="ghost/4.jpg" alt="" />
-        </div>
-        <div class="slider-nav">
-          <a href="#slide-1"></a>
-          <a href="#slide-2"></a>
-          <a href="#slide-3"></a>
-          <a href="#slide-4"></a>
-        </div>
-      </div>
-      <div class="content">
-        <h3>2023 Rolls-Royce Ghost</h3>
-        <p>
-          The Ghost is powered by a 563-hp 6.7-liter V-12 that is shared
-          with the Cullinan SUV; Black Badge models get a boost in power to
-          592 hp. An eight-speed automatic handles shifting duties, and
-          all-wheel drive is standard. According to Rolls-Royce, the Ghost
-          is capable of hitting 60 mph in just 4.6 seconds, and we're
-          looking forward to verifying that claim at our test track.
-        </p>
-        <a href="#" class="btn rounded-pill main-btn" id="buy-btn1">Buy for: $400,000</a>
-        <a href="#" class="btn rounded-pill main-btn" id="rent-btn1">Rent for: $1,500/day</a>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="swiper-wrapper">
-        <div class="slider">
-          <img id="slide-11" src="phantom/1.jpg" alt="" />
-          <img id="slide-21" src="phantom/2.jpg" alt="" />
-          <img id="slide-31" src="phantom/3.jpg" alt="" />
-          <img id="slide-41" src="phantom/4.jpg" alt="" />
-        </div>
-        <div class="slider-nav">
-          <a href="#slide-11"></a>
-          <a href="#slide-21"></a>
-          <a href="#slide-31"></a>
-          <a href="#slide-41"></a>
-        </div>
-      </div>
-      <div class="content">
-        <h3>2023 Rolls-Royce Phantom</h3>
-        <p>
-          Prodigious power is provided by a silken 563-hp twin-turbo V-12
-          paired with an eight-speed automatic and rear-wheel drive.
-          Acceleration is brisk, but Rolls-Royce's claimed 5.1-second
-          zero-to-60-mph time isn't anything you'd appreciate your chauffeur
-          trying to replicate. The Phantom is better suited to easing along
-          lazily; delicate inputs to throttle and steering are what it likes
-          best.
-        </p>
-        <a href="#" class="btn rounded-pill main-btn" id="buy-btn2">Buy for: $460,000</a>
-        <a href="#" class="btn rounded-pill main-btn" id="rent-btn2">Rent for: $1,700/day</a>
-      </div>
-    </div>
-    <div class="box">
-      <div class="swiper-wrapper">
-        <div class="slider">
-          <img id="slide-12" src="specter/1.jpg" alt="" />
-          <img id="slide-22" src="specter/2.jpg" alt="" />
-          <img id="slide-32" src="specter/3.jpg" alt="" />
-          <img id="slide-42" src="specter/4.jpg" alt="" />
-        </div>
-        <div class="slider-nav">
-          <a href="#slide-12"></a>
-          <a href="#slide-22"></a>
-          <a href="#slide-32"></a>
-          <a href="#slide-42"></a>
-        </div>
-      </div>
-      <div class="content">
-        <h3>2024 Rolls-Royce Spectre</h3>
-        <p>
-          All Spectres will come with a dual-motor electric powertrain with
-          577 horsepower and 664 lb-ft of torque. Rolls-Royce says that's
-          enough to move the 6559-pound coupe to 60 mph in 4.4 seconds.
-          Rolls-Royce's brand ethos is more about quiet cruising than
-          mind-bending performance. Rolls-Royce has installed adaptive
-          suspension to ensure an appropriately isolated ride, and the
-          engineers also made room for a massive amount of sound-deadening
-          material that Rolls says will ensure the cabin remains whisper
-          quiet.
-        </p>
-        <a href="#" class="btn rounded-pill main-btn" id="buy-btn3"
-        >Buy for: $400,000</a
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <!-- http://getbootstrap.com/docs/5.1/ -->
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      rel="stylesheet"
+    />
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    ></script>
+    <!-- https://favicon.io/emoji-favicons/money-bag/ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolls-Royce</title>
+    <link rel="stylesheet" href="..\..\bootstrap\css\all.min.css" />
+    <link rel="stylesheet" href="../car.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swal js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="../../index.php">
+          <img src="../../img/logo.png" alt="" height="90cm" width="200cm" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-        <a href="#" class="btn rounded-pill main-btn" id="rent-btn3"
-        >Rent for: $1,500/day</a
-        >
-      </div>
-    </div>
-    <div class="box">
-      <div class="swiper-wrapper">
-        <div class="slider">
-          <img id="slide-13" src="dawn/1.jpg" alt="" />
-          <img id="slide-23" src="dawn/2.jpg" alt="" />
-          <img id="slide-33" src="dawn/3.jpg" alt="" />
-          <img id="slide-43" src="dawn/4.jpg" alt="" />
-        </div>
-        <div class="slider-nav">
-          <a href="#slide-13"></a>
-          <a href="#slide-23"></a>
-          <a href="#slide-33"></a>
-          <a href="#slide-43"></a>
-        </div>
-      </div>
-      <div class="content">
-        <h3>2021 Rolls-Royce Dawn</h3>
-        <p>
-          Under the hood sits a twin-turbocharged 6.6-liter V-12. It pumps
-          out 563 horsepower, making the Dawn as fleet as it is sexy. At the
-          test track, the Dawn rushed to 60 mph in just 4.3 seconds. It
-          moves gracefully and deliberately, and it cossets passengers even
-          when driving over the harshest potholes. The eight-speed automatic
-          transmission is tuned for tranquility. It uses GPS to determine
-          when it should change gears, considering whether the car is going
-          uphill, downhill, or around corners.
-        </p>
-        <a href="#" class="btn rounded-pill main-btn" id="buy-btn4"
-        >Buy for: $359,250</a
-        >
-        <a href="#" class="btn rounded-pill main-btn" id="rent-btn4"
-        >Rent for: $1,500/day</a
-        >
-      </div>
-    </div>
-  </div>
-  <!-- <?php endfor; ?> -->
-  <!-- End of loop -->
-  <div class="load-more">
-    <a href="#" class="btn rounded-pill main-btn">load more</a>
-  </div>
-</section>
-<!-- home packages section ends -->
-<!-- footer section starts -->
-<div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-lg-4">
-        <div class="info mb-5">
-          <img src="img\logo.png" alt="" class="mb-4" />
-          <p class="mb-5">
-            EASYDRIVE est une agence de vente et location de voiture en
-            Tunisie, disposant d’une large gamme de véhicules, avec boîte
-            manuelle ou automatique à des prix convenables.
-          </p>
-          <div class="copyright">
-            <i class="fa-solid fa-location-dot"></i> centre urbain nord
-            <div>&copy; 2021 - <span>EASYDRIVE</span></div>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="../../index.php">Accueil</a> 
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="../../#Services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="../../#about">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="../../#Contact">Contact</a>
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3 d-none d-lg-block">
+            <i class="fa-solid"></i>
+          </div>
+          <div>
+            <a class="btn rounded-pill main-btn" href="../../login.php">Login</a>
+            <a class="btn rounded-pill main-btn" href="../../register.php">Register</a>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-2">
-        <div class="links">
-          <h5 class="text-light">Links</h5>
-          <ul class="list-unstyled lh-lg">
-            <li>Accueil</li>
-            <li>Services</li>
+    </nav>
+    <!-- header section ends -->
+    <!-- home section starts -->
+    <div class="container-fluid banner">
+      <div class="col-md-12">
+        <div style="width: 100%; margin: auto" class="navbar navbar-md">
+          <ul style="width: 50%; margin: auto" class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../Aston/aston.html">Aston</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../bugatti/bugatti.html">Bugatti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../bugatti/bugatti.html">Koenigsegg</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../lamborghinni/lamborghinni.html"
+                >Lamborghinni</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Porche/porche.html">Porche</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rollsroyce</a>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="col-md-6 col-lg-2">
-        <div class="links">
-          <h5 class="text-light">About Us</h5>
-          <ul class="list-unstyled lh-lg">
-            <li>log in</li>
-            <li>Register</li>
-            <li>About us</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="contact">
-          <h5 class="text-light">Contact Us</h5>
-          <p>Par Email :</p>
-          <a class="btn rounded-pill main-btn w-100" href="#"
-          >EASYDRIVE@gmail.com</a
-          >
-          <p class="lh-lg mt-3 mb-5">
-            OU Contactez-nous par téléphone. Nous attendons votre appel ou
-            votre message
+      <div class="row">
+        <div class="col-md-8 offset-md-2 info">
+          <img
+            src="logo.png"
+            alt=""
+            style="width: 700px; margin-top: 1rem; margin-bottom: 2.5rem"
+          />
+          <p class="text-center">
+            Le fabricant légendaire de certaines des meilleures voitures de luxe
+            que vous pouvez acheter a une réputation d'ingénierie exemplaire
+            depuis son introduction en 1906. Alors que les véhicules sont
+            toujours construits en Angleterre, Rolls-Royce appartient
+            aujourd'hui à BMW. La Rolls-Royce la plus chère est la Phantom ; Les
+            prix fantômes commencent à plus de 450 000 $. Il y a aussi un SUV,
+            le Cullinan. Il porte le nom du plus gros diamant jamais trouvé.
           </p>
-          <p>Tel/Fax : 40 00 00 00</p>
-          <p>GSM : 20 000 000</p>
-          <ul class="d-flex mt-5 list-unstyled gap-3">
-            <li>
-              <a class="d-block text-light" href="#">
-                <i
-                        class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"
-                ></i>
-              </a>
-            </li>
-            <li>
-              <a class="d-block text-light" href="#">
-                <i
-                        class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"
-                ></i>
-              </a>
-            </li>
-            <li>
-              <a class="d-block text-light" href="#">
-                <i
-                        class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"
-                ></i>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- footer section ends -->
-<!-- swiper js -->
-<!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
-<script src=" https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- custom js file link -->
-<script src="../car.js"></script>
-<script>
 
-  for (let i = 1; i < 5; i++) {
-    let buyBtn = document.getElementById("buy-btn" + i.toString());
-    attachBuyEventListener(buyBtn);
-  }
-  function attachBuyEventListener(buyBtn) {
-    buyBtn.addEventListener("click", () => {
-      var car = buyBtn.getAttribute("name");
-      Swal.fire({
-        title: "Buy this car?",
-        html: "Are you sure about buying this car?<br>",
-        showCancelButton: true,
-        confirmButtonText: "Yes, I'm sure!",
-        cancelButtonText: "Cancel",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          console.log(car);
-          // Perform a server-side operation by making an AJAX request
-          var xhr = new XMLHttpRequest();
-          xhr.open("POST", "../../Buy.php", true);
-          xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-          xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-              console.log(xhr.responseText);
-              var response = xhr.responseText;
+    <!-- car packages starts -->
+    <section class="car-packages">
+      <h1 class="heading-title">Nos Voitures</h1>
+      <div class="box-container">
+        <!-- Start of loop -->
+        <!-- <?php for ($i = 1; $i <= 3; $i++): ?> -->
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-1" src="ghost/1.jpg" alt="" />
+              <img id="slide-2" src="ghost/2.jpg" alt="" />
+              <img id="slide-3" src="ghost/3.jpg" alt="" />
+              <img id="slide-4" src="ghost/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2023 Rolls-Royce Ghost</h3>
+            <p style="font-size: medium">
+              Le Rolls-Royce Ghost 2023 est une berline de luxe emblématique,
+              offrant un mélange parfait de raffinement, de confort et de
+              performances. Avec son design élégant et intemporel, la Ghost se
+              distingue par sa présence imposante sur la route. L'intérieur
+              opulent et silencieux, crée une expérience de conduite luxueuse et
+              sereine.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn" id="buy-btn1"
+              >Buy for: $400,000</a
+            >
+            <a href="#" class="btn rounded-pill main-btn" id="rent-btn1"
+              >Rent for: $1,500/day</a
+            >
+          </div>
+        </div>
 
-              if (response === "success") {
-                alert("Success");
-              } else if (response === "Not_Logged") {
-                window.location.href = "../../login.html";
-                alert("You are not logged in");
-              }else{
-                alert(response);
-              }
-            } else if (xhr.readyState === 4 && xhr.status !== 200)  {
-              console.log(xhr.responseText);
-              console.log("Error: " + xhr.status);
-              alert("Operation failed, please try again!");
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-11" src="phantom/1.jpg" alt="" />
+              <img id="slide-21" src="phantom/2.jpg" alt="" />
+              <img id="slide-31" src="phantom/3.jpg" alt="" />
+              <img id="slide-41" src="phantom/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-11"></a>
+              <a href="#slide-21"></a>
+              <a href="#slide-31"></a>
+              <a href="#slide-41"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2023 Rolls-Royce Phantom</h3>
+            <p style="font-size: medium">
+              Le Rolls-Royce Phantom 2023 est le summum du luxe automobile,
+              offrant un design majestueux et une présence imposante sur la
+              route. Son intérieur somptueux et personnalisable est conçu pour
+              offrir un confort inégalé.c'est une véritable icône du luxe et de
+              l'exclusivité
+            </p>
+            <a href="#" class="btn rounded-pill main-btn" id="buy-btn2"
+              >Buy for: $460,000</a
+            >
+            <a href="#" class="btn rounded-pill main-btn" id="rent-btn2"
+              >Rent for: $1,700/day</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-12" src="specter/1.jpg" alt="" />
+              <img id="slide-22" src="specter/2.jpg" alt="" />
+              <img id="slide-32" src="specter/3.jpg" alt="" />
+              <img id="slide-42" src="specter/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-12"></a>
+              <a href="#slide-22"></a>
+              <a href="#slide-32"></a>
+              <a href="#slide-42"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2024 Rolls-Royce Spectre</h3>
+            <p style="font-size: medium">
+              Tous les Spectres seront équipés d'un groupe motopropulseur
+              électrique à deux moteurs de 577 chevaux et 664 lb-pi de couple.
+              Rolls-Royce dit que c'est suffisant pour déplacer le coupé de 6559
+              livres à 60 mph en 4,4 secondes. La philosophie de la marque
+              Rolls-Royce est davantage axée sur la conduite silencieuse que sur
+              les performances.
+              <a href="#" class="btn rounded-pill main-btn" id="buy-btn3"
+                >Buy for: $400,000</a
+              >
+              <a href="#" class="btn rounded-pill main-btn" id="rent-btn3"
+                >Rent for: $1,500/day</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="swiper-wrapper">
+            <div class="slider">
+              <img id="slide-13" src="dawn/1.jpg" alt="" />
+              <img id="slide-23" src="dawn/2.jpg" alt="" />
+              <img id="slide-33" src="dawn/3.jpg" alt="" />
+              <img id="slide-43" src="dawn/4.jpg" alt="" />
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-13"></a>
+              <a href="#slide-23"></a>
+              <a href="#slide-33"></a>
+              <a href="#slide-43"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>2021 Rolls-Royce Dawn</h3>
+            <p style="font-size: medium">
+              Le Rolls-Royce Dawn 2021 est un cabriolet de luxe qui offre une
+              expérience de conduite somptueuse et élégante. Avec son design
+              raffiné et intemporel, la Dawn se démarque par son allure
+              emblématique.La Rolls-Royce Dawn 2021 incarne le luxe ultime
+              et offre une expérience de conduite unique en son genre.
+            </p>
+            <a href="#" class="btn rounded-pill main-btn" id="buy-btn4"
+              >Buy for: $359,250</a
+            >
+            <a href="#" class="btn rounded-pill main-btn" id="rent-btn4"
+              >Rent for: $1,500/day</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- <?php endfor; ?> -->
+      <!-- End of loop -->
+      <div class="load-more">
+        <a href="#" class="btn rounded-pill main-btn">load more</a>
+      </div>
+    </section>
+    <!-- home packages section ends -->
+    <!-- footer section starts -->
+    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="info mb-5">
+              <img src="img\logo.png" alt="" class="mb-4" />
+              <p class="mb-5">
+                EASYDRIVE est une agence de vente et location de voiture en
+                Tunisie, disposant d’une large gamme de véhicules, avec boîte
+                manuelle ou automatique à des prix convenables.
+              </p>
+              <div class="copyright">
+                <i class="fa-solid fa-location-dot"></i> centre urbain nord
+                <div>&copy; 2021 - <span>EASYDRIVE</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Accueil</li>
+                <li>Services</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">About Us</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>log in</li>
+                <li>Register</li>
+                <li>About us</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="contact">
+              <h5 class="text-light">Contact Us</h5>
+              <p>Par Email :</p>
+              <a class="btn rounded-pill main-btn w-100" href="#"
+                >EASYDRIVE@gmail.com</a
+              >
+              <p class="lh-lg mt-3 mb-5">
+                OU Contactez-nous par téléphone. Nous attendons votre appel ou
+                votre message
+              </p>
+              <p>Tel/Fax : 40 00 00 00</p>
+              <p>GSM : 20 000 000</p>
+              <ul class="d-flex mt-5 list-unstyled gap-3">
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section ends -->
+    <!-- swiper js -->
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="../car.js"></script>
+    <script>
+      for (let i = 1; i < 5; i++) {
+        let buyBtn = document.getElementById("buy-btn" + i.toString());
+        attachBuyEventListener(buyBtn);
+      }
+      function attachBuyEventListener(buyBtn) {
+        buyBtn.addEventListener("click", () => {
+          var car = buyBtn.getAttribute("name");
+          Swal.fire({
+            title: "Buy this car?",
+            html: "Are you sure about buying this car?<br>",
+            showCancelButton: true,
+            confirmButtonText: "Yes, I'm sure!",
+            cancelButtonText: "Cancel",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              console.log(car);
+              // Perform a server-side operation by making an AJAX request
+              var xhr = new XMLHttpRequest();
+              xhr.open("POST", "../../Buy.php", true);
+              xhr.setRequestHeader(
+                "Content-type",
+                "application/x-www-form-urlencoded"
+              );
+              xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                  console.log(xhr.responseText);
+                  var response = xhr.responseText;
+
+                  if (response === "success") {
+                    alert("Success");
+                  } else if (response === "Not_Logged") {
+                    window.location.href = "../../login.html";
+                    alert("You are not logged in");
+                  } else {
+                    alert(response);
+                  }
+                } else if (xhr.readyState === 4 && xhr.status !== 200) {
+                  console.log(xhr.responseText);
+                  console.log("Error: " + xhr.status);
+                  alert("Operation failed, please try again!");
+                }
+              };
+              xhr.send("car=" + car);
             }
-          };
-          xhr.send("car=" + car);
-        }
-      });
-    });
-  }
+          });
+        });
+      }
 
-  for (let i = 1; i < 5; i++) {
-    let rentBtn = document.getElementById("rent-btn" + i.toString());
-    attachRentEventListener(rentBtn);
-  }
+      for (let i = 1; i < 5; i++) {
+        let rentBtn = document.getElementById("rent-btn" + i.toString());
+        attachRentEventListener(rentBtn);
+      }
 
-  function attachRentEventListener(rentBtn) {
-    rentBtn.addEventListener("click", () => {
-      var date = '<form style="margin-bottom: 1rem;"> <label for="from-date">From: </label><input type="date" id="from-date" name="from-date" required> <label for="to-date">To: </label><input type="date" id="to-date" name="to-date" required><br></form>';
-      Swal.fire({
-        title: "Rent this car?",
-        html: date + "Are you sure about renting this car?<br>",
-        showCancelButton: true,
-        confirmButtonText: "Yes, I'm sure!",
-        cancelButtonText: "Cancel",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          var fromDate = document.getElementById("from-date").value;
-          var toDate = document.getElementById("to-date").value;
-          var car = rentBtn.getAttribute("name");
-          console.log("From Date:", fromDate, "To Date:", toDate, "Car:", car);
+      function attachRentEventListener(rentBtn) {
+        rentBtn.addEventListener("click", () => {
+          var date =
+            '<form style="margin-bottom: 1rem;"> <label for="from-date">From: </label><input type="date" id="from-date" name="from-date" required> <label for="to-date">To: </label><input type="date" id="to-date" name="to-date" required><br></form>';
+          Swal.fire({
+            title: "Rent this car?",
+            html: date + "Are you sure about renting this car?<br>",
+            showCancelButton: true,
+            confirmButtonText: "Yes, I'm sure!",
+            cancelButtonText: "Cancel",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              var fromDate = document.getElementById("from-date").value;
+              var toDate = document.getElementById("to-date").value;
+              var car = rentBtn.getAttribute("name");
+              console.log(
+                "From Date:",
+                fromDate,
+                "To Date:",
+                toDate,
+                "Car:",
+                car
+              );
 
-          // Perform the AJAX request
-          var xhr = new XMLHttpRequest();
-          xhr.open("POST", "../../Rent.php", true);
-          xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-          xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-              console.log(xhr.responseText);
-              var response = xhr.responseText;
-              // Process the response and redirect accordingly
-              if (response === "success") {
-                alert("Success");
-              } else if (response === "Not_Logged") {
-                // Redirect to login.html
-                window.location.href = "../../login.html";
-                alert("You are not logged in");
-              } else{
-                alert(response);
-              }
-
-            } else if (xhr.readyState === 4 && xhr.status !== 200)  {
-              console.log("Error: " + xhr.status);
-              alert("Operation failed, please try again!");
+              // Perform the AJAX request
+              var xhr = new XMLHttpRequest();
+              xhr.open("POST", "../../Rent.php", true);
+              xhr.setRequestHeader(
+                "Content-type",
+                "application/x-www-form-urlencoded"
+              );
+              xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                  console.log(xhr.responseText);
+                  var response = xhr.responseText;
+                  // Process the response and redirect accordingly
+                  if (response === "success") {
+                    alert("Success");
+                  } else if (response === "Not_Logged") {
+                    // Redirect to login.html
+                    window.location.href = "../../login.html";
+                    alert("You are not logged in");
+                  } else {
+                    alert(response);
+                  }
+                } else if (xhr.readyState === 4 && xhr.status !== 200) {
+                  console.log("Error: " + xhr.status);
+                  alert("Operation failed, please try again!");
+                }
+              };
+              xhr.send(
+                "fromDate=" + fromDate + "&toDate=" + toDate + "&car=" + car
+              );
             }
-          };
-          xhr.send("fromDate=" + fromDate + "&toDate=" + toDate + "&car=" + car);
-        }
-      });
-    });
-  }
-</script>
-</body>
+          });
+        });
+      }
+    </script>
+  </body>
 </html>

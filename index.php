@@ -163,7 +163,7 @@
               </div>
               <h4 class="mb-3 mt-3 text-uppercase">Qualité et Savoir-faire</h4>
               <p class="text-black-50 lh-lg">
-                EASYDRIVE vous assure une transparence totale pour trouver une voiture adaptée à votre besoin et aux meilleurs prix.
+                EASYDRIVE vous assure une transparence totale pour trouver une voiture de luxe et de sport adaptée à votre besoin et aux meilleurs prix.
                 Nous assurons à notre chère clientèle des voitures de locations et de vente récentes & propres.
               </p>
             </div>
@@ -227,8 +227,8 @@
           <p class="text-black-50 text-uppercase">Votre partenaire de route</p>
         </div>
         <p class="description text-center mb-5 text-black-50 m-auto">
-          Agence vente et location de voiture en Tunisie, EASYDRIVE vous offre ses services de location et de vente avec une sélection de véhicules
-          de luxe à des prix pas cher.Vous êtes à la recherche d’une offre spéciale de location et d'achat de voiture ? Visitez EASYDRIVE
+          La preimière Agence vente et location de voiture de luxe et sport en Tunisie, EASYDRIVE vous offre ses services de location et de vente avec une sélection de véhicules
+          de luxe à des meilleurs prix .Vous êtes à la recherche d’une offre spéciale de location et d'achat de voiture comme une nouvelle experience? Visitez EASYDRIVE
           et profitez de nos offres exceptionnelles: Notre agence vous assure une vaste gamme de véhicules qui s’adaptent à tous vos besoins.
         </p>
         <div class="row align-items-center">
@@ -237,9 +237,9 @@
               <h4>Bienvenue chez EASYDRIVE</h4>
               <p class="text-black-50 fs-6">
                 EASYDRIVE, dont le siège social se situe au centre urbain nord, est implantée sur le marché de la Tunisie dans le domaine de la vente et de
-                la location automobile avec des prix compétitifs depuis 2021. Ainsi, notre société s’est donnée comme priorité la qualité
+                la location automobile luxe et sport comme une premiere avec des prix compétitifs depuis 2021. Ainsi, notre société s’est donnée comme priorité la qualité
                 de service et la satisfaction de ses clients en employant le savoir-faire développé au cours de ses 2 années d’expérience pour offrir
-                un service de qualité qui s’adapte aux besoins des entreprises, leurs exigences et surtout leurs contraintes budgétaires.
+                un service de qualité qui s’adapte aux besoins des clients, leurs exigences et surtout leurs contraintes budgétaires.
               </p>
               <p class="text-black-50 fs-6">
                 EASYDRIVE fait partie des meilleures agences sur le marché en Tunisie pas cher, nous sommes reconnus par
@@ -370,7 +370,8 @@
             <div class="contact">
               <h5 class="text-light">Contact Us</h5>
               <p>Par Email :</p>
-              <a class="btn rounded-pill main-btn w-100" href="#" >EASYDRIVE@gmail.com</a>
+              <a class="btn rounded-pill main-btn w-100" href="https://mail.google.com/mail/?view=cm&to=EASYDRIVE@gmail.com" target="_blank" >
+                EASYDRIVE@gmail.com</a>
               <p class="lh-lg mt-3 mb-5">OU Contactez-nous par téléphone. Nous attendons votre appel ou votre message</p>
               <p>Tel/Fax : 40 00 00 00</p>
               <p>
