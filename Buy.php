@@ -1,54 +1,111 @@
 <?php
-
 session_start();
-include_once('connect.php');
+require_once('connect.php');
 
 function buyCar($brand, $model, $userId, $conn)
 {
-    $carId = getCarId($brand, $model, $conn);
+    $carInfo = getCarInfo($brand, $model, $conn);
 
-    if ($carId) {
-        $success = insertIntoBuyTable($userId, $carId, $conn);
-        if ($success) {
-            echo "success";
+    if ($carInfo) {
+        $carId = $carInfo[0];
+        $carPrice = $carInfo[1];
+
+        $userBalance = getUserBalance($userId, $conn);
+
+        if ($userBalance !== null && $userBalance >= $carPrice) {
+            try {
+                $conn->begin_transaction();
+
+                $success = insertIntoBuyTable($userId, $carId, $carPrice, $conn);
+                if ($success) {
+                    $newBalance = $userBalance - $carPrice;
+                    updateBalance($userId, $newBalance, $conn);
+
+                    $conn->commit();
+                    echo "success";
+                } else {
+                    echo "Oops! Something went wrong while inserting into the 'buy' table.";
+                }
+            } catch (Exception $e) {
+                $conn->rollback();
+                echo "Oops! An error occurred during the transaction.";
+            }
         } else {
-            echo "Oops! Something went wrong while inserting into the 'buy' table.";
+            echo "Insufficient balance.";
         }
     } else {
         echo "No car found.";
     }
 }
 
-function getCarId($brand, $model, $conn)
+function getUserBalance($userId, $conn)
 {
-    $sql = "SELECT car_id FROM cars WHERE brand = ? AND model = ?";
-    $stmt = mysqli_prepare($conn, $sql);
+    $sql = "SELECT Credits FROM user WHERE User_ID = ?";
+    $stmt = $conn->prepare($sql);
     if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "ss", $brand, $model);
-        if (mysqli_stmt_execute($stmt)) {
-            mysqli_stmt_store_result($stmt);
+        $stmt->bind_param("s", $userId);
+        if ($stmt->execute()) {
+            $stmt->store_result();
 
-            if (mysqli_stmt_num_rows($stmt) == 1) {
-                mysqli_stmt_bind_result($stmt, $carId);
-                mysqli_stmt_fetch($stmt);
-                mysqli_stmt_close($stmt);
-                return $carId;
+            if ($stmt->num_rows == 1) {
+                $stmt->bind_result($balance);
+                $stmt->fetch();
+                $stmt->close();
+                return $balance;
             }
         }
-        mysqli_stmt_close($stmt);
+        $stmt->close();
     }
 
     return null;
 }
 
-function insertIntoBuyTable($userId, $carId, $conn)
+function getCarInfo($brand, $model, $conn)
+{
+    $sql = "SELECT car_id, purchase_price FROM cars WHERE brand = ? AND model = ?";
+    $stmt = $conn->prepare($sql);
+    if ($stmt) {
+        $stmt->bind_param("ss", $brand, $model);
+        if ($stmt->execute()) {
+            $stmt->store_result();
+
+            if ($stmt->num_rows == 1) {
+                $stmt->bind_result($carId, $price);
+                $stmt->fetch();
+                $stmt->close();
+                return array($carId, $price);
+            }
+        }
+        $stmt->close();
+    }
+
+    return null;
+}
+
+function insertIntoBuyTable($userId, $carId, $carPrice, $conn)
 {
     $sql = "INSERT INTO Buy (u_id, c_id) VALUES (?, ?)";
-    $stmt = mysqli_prepare($conn, $sql);
+    $stmt = $conn->prepare($sql);
     if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "ii", $userId, $carId);
-        $success = mysqli_stmt_execute($stmt);
-        mysqli_stmt_close($stmt);
+        $stmt->bind_param("ii", $userId, $carId);
+        $success = $stmt->execute();
+        $stmt->close();
+
+        return $success;
+    }
+
+    return false;
+}
+
+function updateBalance($userId, $newBalance, $conn)
+{
+    $sql = "UPDATE user SET Credits = ? WHERE User_ID = ?";
+    $stmt = $conn->prepare($sql);
+    if ($stmt) {
+        $stmt->bind_param("ds", $newBalance, $userId);
+        $success = $stmt->execute();
+        $stmt->close();
+
         return $success;
     }
 
@@ -72,4 +129,5 @@ if (isset($_SESSION['user'])) {
     exit();
 }
 
-mysqli_close($conn);
+$conn->close();
+?>
