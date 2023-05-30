@@ -265,7 +265,7 @@
         <div class="row">
           <div style="width: 16.7%; margin: auto;" class="col-md-6 col-lg-3">
             <div class="box bg-white">
-              <img class="img-fluid" src="" alt="" />
+              <img class="img-fluid" src="/img/Malek.jpg" alt="" />
               <h4 class="p-3 text-light" style="border-radius: 10px;-webkit-border-radius: 10px;">Malek Gharbi</h4>
               <blockquote class="text-black-50 p-3">
                 +216 01010101
@@ -276,7 +276,7 @@
           </div>
           <div style="width: 16.7%; margin: auto;" class="col-md-6 col-lg-3">
             <div class="box bg-white">
-              <img class="img-fluid" src="" alt="" />
+              <img class="img-fluid" src="img/houaida.jpg" alt="" />
               <h4 class="p-3 text-light" style="border-radius: 10px;-webkit-border-radius: 10px;">Houaida Mangour</h4>
               <blockquote class="text-black-50 p-3">
                 +216 02020202
@@ -287,7 +287,7 @@
           </div>
           <div style="width: 16.7%; margin: auto;" class="col-md-6 col-lg-3">
             <div  class="box bg-white">
-              <img class="img-fluid" src="" alt="" />
+              <img class="img-fluid" src="img/anas.jpg" alt="" />
               <h4 class="p-3 text-light" style="border-radius: 10px;-webkit-border-radius: 10px;
                     ">Anas Bader</h4>
               <blockquote class="text-black-50 p-3">
