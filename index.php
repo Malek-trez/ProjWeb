@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -64,7 +62,7 @@
             if(isset($_SESSION['user']))
             {
             ?>
-                <div><a class="btn rounded-pill main-btn" href="Profile.html"><?php echo $_SESSION['user']; ?></a></div>
+                <div><a class="btn rounded-pill main-btn" href="profile.html"><?php echo $_SESSION['user']; ?></a></div>
                 <div><a class="btn rounded-pill main-btn" href="logout.php">Logout</a></div>
             <?php
             }
