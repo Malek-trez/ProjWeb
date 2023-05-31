@@ -45,6 +45,9 @@ body {
 .navbar {
   background-color: var(--dark-color);
 }
+.navbar-nav{
+  margin-left: 45.5%;
+}
 .navbar .navbar-nav .nav-link {
   color: white;
 }

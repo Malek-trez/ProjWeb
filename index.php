@@ -265,7 +265,7 @@
         <div class="row">
           <div style="width: 16.7%; margin: auto;" class="col-md-6 col-lg-3">
             <div class="box bg-white">
-              <img class="img-fluid" src="/img/Malek.jpg" alt="" />
+              <img class="img-fluid" src="img/Malek.jpg" alt="" />
               <h4 class="p-3 text-light" style="border-radius: 10px;-webkit-border-radius: 10px;">Malek Gharbi</h4>
               <blockquote class="text-black-50 p-3">
                 +216 01010101
