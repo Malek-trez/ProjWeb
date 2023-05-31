@@ -1,4 +1,84 @@
 
+function validateLoginForm(event) {
+    event.preventDefault(); // Prevent form submission for now
+
+    // Get form input values
+    var email = document.getElementById("form2Example18").value;
+    var password = document.getElementById("form2Example28").value;
+
+    // Basic email validation (you can add more checks)
+    if (!/\S+@\S+\.\S+/.test(email)) {
+        alert("Please enter a valid email address");
+        return;
+    }
+
+    // Check password length
+    if (password.length < 8) {
+        alert("Password should be at least 8 characters long");
+        return;
+    }
+
+    // If all validations pass, submit the form
+    document.getElementById("loginForm").submit();
+}
+function handleRegisterFormSubmission(event) {
+    var fname = document.getElementById('fname').value;
+    var lname = document.getElementById('lname').value;
+    var email = document.getElementById('email').value;
+    var dob = document.getElementById('form3Example3').value;
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirm_password').value;
+
+    var errorMessages = [];
+
+    if (fname.trim() === '') {
+        errorMessages.push({ field: 'fname', message: 'Please enter your first name.' });
+    }
+
+    if (lname.trim() === '') {
+        errorMessages.push({ field: 'lname', message: 'Please enter your last name.' });
+    }
+
+    if (email.trim() === '') {
+        errorMessages.push({ field: 'email', message: 'Please enter your email address.' });
+    }
+
+    if (dob.trim() === '') {
+        errorMessages.push({ field: 'form3Example3', message: 'Please enter your date of birth.' });
+    }
+
+    if (password.trim() === '') {
+        errorMessages.push({ field: 'password', message: 'Please enter a password.' });
+    } else if (password.length < 8) {
+        errorMessages.push({ field: 'password', message: 'Password should be at least 8 characters long.' });
+    }
+
+    if (confirmPassword.trim() === '') {
+        errorMessages.push({ field: 'confirm_password', message: 'Please confirm your password.' });
+    } else if (password !== confirmPassword) {
+        errorMessages.push({ field: 'confirm_password', message: 'Passwords do not match.' });
+    }
+
+    if (errorMessages.length > 0) {
+        for (var i = 0; i < errorMessages.length; i++) {
+            var field = errorMessages[i].field;
+            var message = errorMessages[i].message;
+            var inputField = document.getElementById(field);
+            var errorMessage = document.createElement('p');
+            errorMessage.className = 'error-message';
+            errorMessage.style.color = 'red';
+            errorMessage.innerText = message;
+
+            var existingErrorMessages = inputField.parentElement.getElementsByClassName('error-message');
+            for (var j = 0; j < existingErrorMessages.length; j++) {
+                existingErrorMessages[j].remove();
+            }
+
+            inputField.insertAdjacentElement('afterend', errorMessage);
+        }
+        event.preventDefault(); // Prevent form submission
+    }
+}
 
 function showUserInfo() {
     // Replace the content of the right section with user information

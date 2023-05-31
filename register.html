@@ -11,11 +11,12 @@
     <link href="styles.css" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css" />
-    <link rel="stylesheet" href="bootstrap\css\all.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/all.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="script.js"></script>
 
 
     <title>Register</title>
@@ -32,13 +33,13 @@
                             <div class="card-body p-md-5 mx-md-4">
 
                                 <div class="text-center">
-                                    <img src="img\logo.png "style="width: 185px;" alt="logo">
+                                    <img src="img/logo.png " style="width: 185px;" alt="logo">
                                     <h4 class="mt-1 mb-5 pb-1">"Votre Partenaire De Route"</h4>
                                 </div>
 
 
 
-                                <form style="width: 23rem;" method="post" action="register.php">
+                                <form id="registrationForm" style="width: 23rem;" method="post" action="register.php" >
 
 
                                     <h3  class="fw-normal mb-3 pb-3 text-center" style="letter-spacing: 1px;">Créer un compte</h3>
@@ -78,8 +79,8 @@
                                     <!--Birthday-->
                                     <div class="form-outline mb-4">
                                         <i class="fa-solid fa-cake-candles" style="color: #d03939;"></i>
-                                        <label class="form-label" for="form3Example3">Date de naissance</label>
-                                        <input type="date" id="form3Example3" class="form-control" />
+                                        <label class="form-label" for="form3Example3" >Date de naissance</label>
+                                        <input type="date" id="form3Example3" name="form3Example3" class="form-control" />
 
                                     </div>
 
@@ -90,7 +91,7 @@
                                         <h6 class="mb-2 pb-1"><i class="fa-solid fa-venus-mars" style="color: #d03939;"></i>Gender: </h6>
 
                                         <div class="form-check form-check-inline text-center">
-                                            <input class="form-check-input" style="background-color:#dc3545;" type="radio" name="sexe" id="femaleGender"value="F" checked />
+                                            <input class="form-check-input" style="background-color:#dc3545;" type="radio" name="sexe" id="femaleGender" value="F" checked />
                                             <label class="form-check-label" for="femaleGender" >Femme</label>
                                         </div>
 
@@ -127,12 +128,11 @@
 
                                     <p style="color: gray;" class="text-center">Revenir sur la page d'<a href="index.php" class="link-info"> Accueil </a>  </p>
                                 </form>
-
                             </div>
 
                         </div>
                         <div class="col-sm-6 px-0 d-none d-sm-block">
-                            <img src="img\c1.jpg"
+                            <img src="img/c1.jpg"
                                  alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
                         </div>
                     </div>
@@ -141,7 +141,24 @@
         </div>
     </div>
 </section>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/all.min.js"></script>
+
+<script>
+
+    // Call the function when the form is submitted
+    document.getElementById('registrationForm').addEventListener('submit', handleRegisterFormSubmission);
+
+    // Clear error messages when input values change
+    var formInputs = document.getElementsByClassName('form-control');
+    for (var i = 0; i < formInputs.length; i++) {
+        formInputs[i].addEventListener('input', function() {
+            var inputField = this;
+            var existingErrorMessages = inputField.parentElement.getElementsByClassName('error-message');
+            for (var j = 0; j < existingErrorMessages.length; j++) {
+                existingErrorMessages[j].remove();
+            }
+        });
+    }
+</script>
+
 </body>
 </html>
